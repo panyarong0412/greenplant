@@ -40,3 +40,30 @@ $(".foundconnect").hover(
         });
 	}
 	);
+/*
+function goTop(){
+    $('#topBtn').onclick=pro;
+    function pro(){
+        let $num=document.documentElement.scrollTop;
+        $num-=$num/100+1;
+        document.documentElement.scrollTop=$num;
+        timer=setTimeout(pro,3);
+        if(document.documentElement.scrollTop==0){
+            clearTimeout(timer);
+        }
+    }
+}*/
+function gotop(){
+	// let timer=setTimeout
+     $("#scrolltopBtn").onclick=scroll;
+     function scroll(){
+     	let $num=document.documentElement.scrollTop;
+     	$num-=$num/100+1;
+     	document.documentElement.scrollTop=$num;
+     	let timer=setTimeout(scroll,3);
+     	if(document.documentElement.scrollTop==0){
+     		clearTimeout(timer);
+     	}
+
+     }
+}
