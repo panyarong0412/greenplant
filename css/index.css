@@ -1,179 +1,8 @@
-@charset "utf-8";
-body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
-	margin:0;
-	padding:0;
-}
-body::-webkit-scrollbar{
-	display: none;
-}
-a{
-	text-decoration:none;
-}
-ul,ol,li{
-	list-style:none;
-}
 
-body{
-	width:100%;
-	font-family: 'Poppins', sans-serif;
-}
-/*header*/
 header{
-	width:100%;
 	height:860px;
-	padding-top:30px;
 	background: url(../imgs/slider/home1-slider1.jpg) no-repeat center center;
 }
-/*nav全部部分开始*/
-.homenav{	
-	/*height:61px;*/
-	padding-left:51px;
-	padding-right: 34px;
-	font-size: 14px;
-	font-weight:bolder;
-	color:#4a4a4a;
-	line-height:61px;
-}.homelogo{
-	float:left;
-}
-.nav-list{
-	float:right;
-}
-
-
-/*nav前半部分*/
-.nav-list  nav{
-	float:right;
-}
-.menuList{
-	float:left;
-	position: relative;
-	padding:0 33px;
-}
-.menuList>a{
-    font-size: 14px;
-	font-weight: bolder;
-	color:#4a4a4a;
-	padding:2px 0;
-}
-.menuList ul{
-	background:white;
-	width:200px;
-	padding:17px 0px 0px 20px;
-	box-shadow: 0 1px 3px 0px #ccc;
-	position: absolute;
-	left:0;
-	top:50px;
-	display: none;
-}
-.menuList ul li a{
-	font-size: 14px;
-	color:#6a6a6a;
-	font-weight: normal;
-}
- .menu.FeaturesMenu{
-    width:600px;
-    position: absolute;
-    left:-120px;
-    top:50px;
-}
-
-.menuList ul li:hover a{
-	color:#abd373;
-}
-/*nav后半部*/
-.nav-other{
-	float:right;
-	margin-left:40px;
-	line-height: 61px;
-}
-.nav-other img{
-	vertical-align: middle;
-}
-.cart{
-	float:right;
-	width:96px;
-	height:61px;
-	position: relative;
-	line-height: 61px;
-}
-.cart p{
-	font-size: 12px;
-	font-weight: bolder;
-	color:#4a4a4a;
-	line-height:12px;
-	padding-left: 36px;
-	padding-top: 18px;
-}
-.cart:hover p{
-	color:#abd373;
-	cursor: pointer;
-}
-.carticon{
-	position: absolute;
-	left:0;
-	top:15px;
-}
-.home-search{
-	display:inline-block;
-	float:right;
-	position: relative;
-}
-.search-box{
-	 position: relative;
-	 left:-29px;
-	 top:0px;
-	 float：left;
-	 /*display: none;*/
-}
-.search-box {
-    width:220px;
-    height: 40px;
-    outline:none;
-    border:none;
-    box-shadow: 0 0 1px 2px #d9d8d7;
-    text-indent: 12px;
-    padding-right: 24px;
-    font-size: 16px;
-    color:#757575;
-    display: none;
-   
-}
-.input-search{
-	position: absolute;
-	top: 23px;
-    left: 280px;
-	z-index: 9999;
-
-}
-.searchIcon{
-	padding:0 38px;
-}
-.home-list{
-	float:right;
-	position: relative;
-}
-.home-list ul{
-	float:left;
-	position: absolute;
-    background:white;
-	width:200px;
-	padding:17px 0px 0px 20px;
-	box-shadow: 0 1px 3px 0px #ccc;
-	position: absolute;
-	left:0;
-	top:50px;
-	display: none;
-	z-index: 999;
-	background:white;
-	width:200px;
-	padding:17px 0px 0px 20px;
-	box-shadow: 0 1px 3px 0px #ccc;
-	display: none;
-}
-
-
-
 /*nav结束*/
 /*header下的内容*/
 .headersection{
@@ -263,7 +92,18 @@ header{
 .mouseinout:hover{
 	box-shadow:0px 10px 20px 6px #cfcbcb;
 }
+.mouseinout:hover .Categories-center{
+	background: #ac0;
+	color:white;
+}
+.mouseinout:hover .Categories-center  h4{
+	color:white;
+}
+.mouseinout:hover .Categories-center  h2{
+	color:white;
+}
 
+/*send开始*/
 .send img{
 	float: left;
 }
@@ -282,7 +122,6 @@ header{
 	line-height: 19px;
 	padding-bottom: 11px;
 }
-
 
 /*ourHistory  start*/
 .ourHistory-title{
@@ -376,10 +215,7 @@ header{
 
 /*Categories-connect*/
 .Categories-connect{
-/*	margin-top:56px;*/
-/*	padding:0 47px;*/
 	height:620px;
-	/*background: red;*/
 	margin-bottom: 30px;
 	display:table;
 	margin:56px  auto 0;
@@ -387,7 +223,6 @@ header{
 .left-rowside{
 	width:570px;
 	height:620px;
-	/*background: blue;*/
 	float:left;
 	position: relative;
 
@@ -574,12 +409,11 @@ header{
 	position: relative;
 	padding-bottom: 40px;
 	float:left;
-    margin:  0 24px 27px 2px;
+    margin:  2px 24px 27px 2px;
 	
 }
 .product-first:hover{
 	box-shadow: 0px -1px 3px 1px #ccc;
-	/*border:1px solid #ccc;*/
 	transition: all 0.2s ;
 }
 .info h3{
@@ -593,17 +427,46 @@ header{
 	width:270px;
     font-size:10px ;
     color:#868686;
-    line-height:14px;
+    /*line-height:14px;*/
+    display: block;
+    /*display: none;*/
 }
-.product-first .addcart a{
-	width:270px;
-    font-size:10px ;
-    color:#868686;
-    line-height:14px;
-    position: absolute;
+.product-first .addcart{
+	display: none; 
+	position: absolute;
     left: 108px;
-    bottom: 1px;
+    bottom: 41px;
+    z-index: 1;
+    
+}
+.product-first .addcart a{ 
+	font-size:10px ;
+    color:#868686;  
+}
+.productChioceIcon{
+	width:160px;
+	height:50px;
+	background: white;
+	position: absolute;
+	top: 117px;
+    left: 55px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px -1px 3px 1px #ccc;
+    /*padding:18px 0;*/
     display: none;
+    line-height: 50px;
+}
+.productChioceIcon .iconfont{
+	font-size:15px;
+	color:#939393;
+	font-weight: bold;
+	padding:0px 14px;
+
+ 
+}
+.productChioceIcon .iconfont:hover{
+	color:#ac0;
 }
 .featured-connect .four{
 	margin-right: 0;
@@ -656,6 +519,7 @@ header{
 	width:1170px;
 	height:486px;
 	margin:0 auto;
+	position: relative;
 }
 .date-product-first{
 	margin-top:75px;
@@ -678,14 +542,22 @@ header{
     color:#868686;
     line-height:14px;
 }
+.date-product-first .addcart{
+	position: absolute;
+    left: 155px;
+    bottom: 41px;
+    /*display: none;*/
+}
 .date-product-first .addcart a{
     font-size:10px;
     color:#868686;
     line-height:14px;
-    position: absolute;
-    left: 155px;
-    bottom: 41px;
-    display: none;
+    
+}
+.date-product .productChioceIcon{
+	position: absolute;
+	top: 166px;
+    left: 108px;
 }
 .date-product .three{
 	margin-right:0;
@@ -693,6 +565,9 @@ header{
 .date-product-first:hover{
 	box-shadow: 0px -1px 3px 1px #ccc;
 	transition: all 0.2s ;
+}
+.date-product-first i:hover{
+	color:#ac0;
 }
 
 /*guide*/
@@ -705,13 +580,18 @@ header{
 	float: left;
 	width: 32%;
 	margin-right: 1.5%;
-	/*margin-bottom: 110px;*/
+	overflow: hidden;
+	margin-bottom: 110px;
 }
 .guide a:last-of-type{
 	margin-right: 0;
 }
 .guide a img{
 	width:100%;
+}
+.guide img:hover{
+	transform: scale(1.2);
+	transition: all 0.3s;
 }
 /*We love our clients*/
 .our-clients{
@@ -760,18 +640,33 @@ header{
 	
 }
 .home-banner1{
-	/*width:1173px;*/
 	display: table;
 	height:153px;
-	/*background:#ac0;*/
 	margin: 0 auto 115px;
+	
 }
 .home-banner1 img{
 	display: block;
 	margin-bottom:30px;
+	
 }
 .home-banner1 a{
 	float:left;
+	position: relative;
+	
+}
+.home-banner1 .bgDiv{
+	width:241px;
+	height: 99px;
+	opacity:0.4;
+	background: white;
+	position: absolute;
+	top:0;
+	left:0;
+
+}
+.home-banner1 a:hover .bgDiv{
+	opacity:0;
 }
 
 /*theBlogs*/
@@ -794,11 +689,22 @@ header{
 	padding-bottom: 55px;
 	margin-right:27px;
 	float:left;
+	
 }
 .blogsSide img{
 	width:373px;
 	height: 220px;
 	display: block;
+}
+.blogsSide>a{
+	width:373px;
+	height:220px;
+	display: block;
+	overflow: hidden;
+}
+.blogsSide a img:hover{
+	transform: scale(1.2);
+	transition: all 0.7s ease-in-out;
 }
 .blogsSideText{
 	padding-left:33px;
@@ -849,113 +755,4 @@ header{
 }
 .sidethree{
 	margin-right: 0;
-}
-/*footer*/
-.last{
-	width:100%;
-	background:black;
-}
-footer{
-	width:1173px;
-	height: 730px;
-	
-	margin-top:;
-	margin: 120px auto 0;
-}
-.footerFirstSide{
-	width:1173px;
-	color:white;
-	border-bottom:2px solid #1a1a1a;
-	overflow: hidden;
-}
-.sideInfo{
-	width:25%;
-	padding:80px 0;
-	float:left;
-}
-.sideInfo h3{
-	font-size:22px;
-	color:#ecedde;
-	line-height:22px;
-	padding-bottom:9px;
-}
-.sideInfo ul a{
-	font-size:14px;
-	color:#ecedde;
-	line-height:14px;
-	padding-top:19px;
-
-}
-.footerSecondSide{
-	width:1173px;
-	color:white;
-	border-bottom:2px solid #1a1a1a;
-	overflow: hidden;
-}
-.sideSecondInfo{
-	width:25%;
-	padding:30px 0;
-	float:left;
-}
-.footerSecondSide .clearInfo a{
-	padding-right:15px;
-	padding-top:9px;
-	float:left;
-	vertical-align: middle;
-}
-.footerSecondSide .clearInfo {
-	padding:40px 0;
-}
-.footerSecondSide p{
-	
-	font-size: 11px;
-	color:white;
-	line-height:21px ;
-	/*float: left;*/
-}
-.footerThirdSide{
-	text-align: center;
-	padding: 50px 0;
-	overflow: hidden;
-}
-.footerThirdSide ul{
-		padding: 0 355px ;
-		margin-top:47px;
-		overflow: hidden;
-}
-.footerThirdSide ul li{
-	text-align: center;
-	float: left;
-	padding: 0 11px;
-	
-}
-.footerThirdSide ul a{
-	font-size: 9px;
-	color:white;
-	line-height: 9px;
-}
-.footerThirdSide p{
-	color:white;
-	margin-top:21px;
-	font-size: 12px;
-}
-.footerThirdSide p a{
-	color:#696107;
-	font-size: 12px;
-}
-
-.scrolltop{
-	width:56px;
-	height: 56px;
-	border-radius: 50%;
-	background:#ac0;
-	position: fixed;
-	right:10px;
-	bottom:10px;
-	text-align: center;
-
-}
-.scrolltop img{
-	vertical-align: middle;
-	padding-top: 21px;
 }

@@ -16,16 +16,17 @@ gulp.task("copyJs",function(){
 	gulp.src("js/**/*")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\js"));
 });
-gulp.task("copyIcon",function(){
+gulp.task("copyFont",function(){
 	gulp.src("js/**/*")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\icon"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\font"));
 });
 gulp.task("copySass",function(){
 	gulp.src("sass/**/*")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\sass"));
+	.pipe(sass())
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\css"));
 });
 
-gulp.task("build",["copyHtml","copyCss","copyImgs","copyJs","copyIcon","copySass"],function(){
+gulp.task("build",["copyHtml","copyCss","copyImgs","copyJs","copyFont","copySass"],function(){
 	console.log("ok");
 });
 gulp.task("watchall",function(){
@@ -33,7 +34,7 @@ gulp.task("watchall",function(){
 	gulp.watch("css/**/*",["copyCss"]);
 	gulp.watch("imgs/**/*",["copyImgs"]);
 	gulp.watch("js/**/*",["copyJs"]);
-	gulp.watch("icon/**/*",["copyIcon"]);
-	// gulp.watch("sass/**/*",["copySass"]);
+	gulp.watch("Font/**/*",["copyFont"]);
+	gulp.watch("sass/**/*",["copySass"]);
 
 });

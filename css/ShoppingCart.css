@@ -1,0 +1,93 @@
+@charset "utf-8";
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
+	margin:0;
+	padding:0;
+}
+/*body::-webkit-scrollbar{
+	display: none;
+}*/
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+body{
+	width:100%;
+	font-family: 'Poppins', sans-serif;
+}
+.bigTitle{
+	text-align: center;
+	padding:73px 0;
+	background: #f4f4f4;
+	margin-bottom:150px;
+}
+.bigTitle h1{
+	font-size: 47px;
+	padding-bottom: 30px;
+}
+.bigTitle p a{
+	font-size: 14px;
+	padding: 0 20px;
+	color:#7c6666;
+}
+.bigTitle p a:last-of-type{
+	font-size: 14px;
+	padding: 0 20px;
+	color:#abd397;
+}
+.shoppingProduct{
+	display: table;
+	margin:0 auto 65px;
+
+}
+.shoppingList{
+	border:1px solid #ebebeb;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.shoppingList th{
+	width:193px;
+	height: 83px;
+	border:1px solid  #ebebeb;
+	background: #f6f6f6;
+}
+.shoppingList th:nth-of-type(3){
+	width:425px;
+}
+.shoppingList td{
+	height: 162px;
+	border:1px solid  #ebebeb;
+}
+
+/*row1*/
+.row1{
+	width:;
+}
+.row1Left{
+	float: left;
+}
+.row1 .rowSubright{
+   float: right;
+}
+.row1LeftText  {
+	float: left;
+	margin-right: 7px;
+}
+.rowSub{
+	float: left;
+}
+.row1LeftText input{
+	width:150px;
+	height:53px;
+	outline: none;
+}
+.rowSub input{
+	width:200px;
+	height:57px;
+	float: left;
+	outline: none;
+	border:none;
+	background: #333333;
+}
