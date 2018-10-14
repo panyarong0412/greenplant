@@ -174,7 +174,6 @@ body{
  /*connect 部分开始*/
  
  .connect{
-    background:pink;
     width:1170px;
     display:table;
     overflow:hidden;
@@ -188,15 +187,15 @@ body{
 
  }
  .leftSideTop{
- padding-bottom:36px;
+   padding-bottom:36px;
  }
 .title{
-font-size:20px;
-color:#000315;
-padding-bottom:13px;
-line-height:22px;
-border-bottom:1px solid $borderColor;
-margin-bottom:26px;	
+    ont-size:20px;
+	color:#000315;
+	padding-bottom:13px;
+	line-height:22px;
+	border-bottom:1px solid $borderColor;
+	margin-bottom:26px;	
 }
 .Select{
 	width:574px;
@@ -247,7 +246,7 @@ margin-bottom:26px;
 	line-height:16px;
 }
 
-.leftSFidebottom input{
+.leftSidebottom input{
 	margin-left:24px;
 }
 .infoma textarea{
@@ -281,7 +280,7 @@ input placeholder{
 }
 .lastPro th {
    width:451px;
-   background:#fffafa;
+   background:#f6f6f6;
    color:#4f4b64;	
 }
 .lastPro td{
@@ -296,7 +295,7 @@ tfoot tr{
 	height:70px;
 }
 .lastPro tr:hover{
-	background:#fffafa;
+	background:#f6f6f6;
 }
 .bankpre{
 	margin-top:25px;
@@ -325,4 +324,12 @@ tfoot tr{
 }
 .totalSubmit{
 	margin:25px 0 45px;
+}
+.totalSubmit:hover input{
+	background:$color;
+	transition:all 0.3s ease 0s;
+}
+.bankpre a:hover{
+	color:$color;
+	transition:all 0.3s ease 0s;
 }
