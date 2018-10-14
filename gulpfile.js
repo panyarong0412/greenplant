@@ -17,7 +17,7 @@ gulp.task("copyJs",function(){
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\js"));
 });
 gulp.task("copyFont",function(){
-	gulp.src("js/**/*")
+	gulp.src("font/**/*")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\plant\\font"));
 });
 gulp.task("copySass",function(){

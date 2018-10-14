@@ -20,7 +20,7 @@ body{
 	text-align: center;
 	padding:73px 0;
 	background: #f4f4f4;
-	margin-bottom:150px;
+	margin-bottom:120px;
 }
 .bigTitle h1{
 	font-size: 47px;
@@ -48,22 +48,62 @@ body{
 }
 
 .shoppingList th{
-	width:193px;
-	height: 83px;
+	height: 65px;
 	border:1px solid  #ebebeb;
 	background: #f6f6f6;
 }
+.shoppingList th:nth-of-type(1){
+	width:152px;
+}
+.shoppingList th:nth-of-type(2){
+	width:205px;
+}
 .shoppingList th:nth-of-type(3){
-	width:425px;
+	width:338px;
+}
+.shoppingList th:nth-of-type(4){
+	width:170px;
+}
+.shoppingList th:nth-of-type(5){
+	width:161px;
+}
+.shoppingList th:nth-of-type(6){
+	width:140px;
 }
 .shoppingList td{
-	height: 162px;
+	height: 130px;
 	border:1px solid  #ebebeb;
 }
+.shoppingList i a{
+	color:black;
+}
+.shoppingList span{
+	font-weight: 700;
+}
+.shoppingList i:hover{
+	color:#abd373;
+	transition: all 0.3s ease 0s;
 
+}
+.shoppingList a:hover{
+	color:#abd373;
+	transition: all 0.3s ease 0s;
+}
+.shoppingList input{ 
+	height: 40px;
+    width: 55px;
+	border:none; 
+	border: 1px solid #ededed;  
+	font-size: 14px;
+	color: #222555;
+	padding-left: 4px;
+}
 /*row1*/
 .row1{
-	width:;
+	width:1170px;
+	overflow:hidden;
+	display: table;
+	margin: 0 auto 54px;
 }
 .row1Left{
 	float: left;
@@ -73,21 +113,76 @@ body{
 }
 .row1LeftText  {
 	float: left;
-	margin-right: 7px;
+	margin-right: 4px;
 }
 .rowSub{
 	float: left;
 }
 .row1LeftText input{
-	width:150px;
-	height:53px;
+	width:118px;
+	height:42px;
 	outline: none;
+	padding-left: 10px;
 }
 .rowSub input{
-	width:200px;
-	height:57px;
+	width:162px;
+	height:46px;
 	float: left;
 	outline: none;
 	border:none;
 	background: #333333;
+	color:white;
+	font-weight: 700;
+	transition: all 0.3s ease 0s;
 }
+.row2{
+	width:1170px;
+	overflow: hidden;
+	display: table;
+	margin: 0 auto;
+	
+}
+.carttotal{
+	float:right;
+	
+}
+.carttotal>h2{
+	font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.productList{
+	width:473px;
+	border:1px solid  #ebebeb;
+	border-bottom:none;
+	margin-bottom: 30px;
+}
+.productList li{
+	font-size: 15px;
+    color: #252525;
+    padding: 13px 30px;
+    border-bottom: 1px solid #ebebeb;
+    font-weight: 700;
+}
+.productList li span {
+	float:right;
+}
+.carttotal>a{
+	display:inline-block;
+	padding:10px 20px;
+	background: #333333;
+	color:white;
+	transition: all 0.3s ease 0s;
+}
+ .rowSub:hover input{
+   background:#abd373;
+   transition:all 0.3s ease 0s;
+ }
+ .carttotal>a:hover{
+   background:#abd373;
+   transition:all 0.3s ease 0s;
+
+ }
+ .section{
+ 	padding-bottom: 115px;
+ }

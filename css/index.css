@@ -423,19 +423,23 @@ header{
     line-height:49px;
     padding:16px 0;
 }
+.product-first .pirse{
+		position: absolute;
+    left: 108px;
+    bottom: 39px;
+}
 .product-first .pirse span{
 	width:270px;
     font-size:10px ;
     color:#868686;
     /*line-height:14px;*/
-    display: block;
-    /*display: none;*/
+  
 }
 .product-first .addcart{
-	display: none; 
+	display: none;
 	position: absolute;
     left: 108px;
-    bottom: 41px;
+    bottom: 39px;
     z-index: 1;
     
 }

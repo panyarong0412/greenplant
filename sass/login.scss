@@ -1,0 +1,143 @@
+@charset "utf-8";
+$color:#abd397;
+$borderColor:#d3d0d3;
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
+	margin:0;
+	padding:0;
+}
+/*body::-webkit-scrollbar{
+	display: none;
+}*/
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+body{
+	width:100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bigTitle{
+	text-align: center;
+	padding:73px 0;
+	background: #f4f4f4;
+	margin-bottom:120px;
+}
+.bigTitle h1{
+	font-size: 47px;
+	padding-bottom: 30px;
+}
+.bigTitle p a{
+	font-size: 14px;
+	padding: 0 20px;
+	color:#7c6666;
+}
+.bigTitle p a:hover{
+	color:$color;
+}
+.bigTitle p a:last-of-type{
+	font-size: 14px;
+	padding: 0 20px;
+	color:#abd397;
+}
+
+
+/*container*/
+.connect{
+
+	display:table;
+	margin:0 auto 120px;
+}
+.login{
+	margin-right:28px;
+	float:left;
+}
+ .connect .reg{
+	margin-right:0px;
+}
+.login>h2{
+	font-size:35px;
+	line-height:26px;
+	padding-bottom:37px;
+}
+
+.login-form{
+	border:1px solid $borderColor;
+	border-radius:5px;
+	padding:10px 12px 34px;
+}
+.infoma{
+	margin-top:16px;
+}
+.infoma label{
+	color:#5f7392;
+	font-size:14px;
+	line-height:14px;
+}
+.infoma label span{
+	color:#bb845a;
+}
+.infoma>input{
+	background:#f5f5f5;
+	width:530px;
+	height:36px;
+	border:none;
+	outline:none;
+	margin-top:15px;
+}
+.Submit{
+    margin-top:16px;
+	width:530px;
+	height:36px;
+	margin-bottom:19px;
+
+}
+.login-btn{
+	width:92px;
+	height:48px;
+	background:#000;
+	border:none;
+	outline:none;
+	color:white;
+	font-size:14px;
+	line-height:14px;
+	margin-right:28px;
+}
+.login-btn:hover{
+	background:$color;
+	transition:all 0.3s ease 0s;
+}
+.Submit span{
+	color:#5f7392;
+	font-size:14px;
+	line-height:14px;
+	
+}
+.lostpass a{
+	color:#bb845a;
+	font-size:14px;
+	line-height:14px;
+}
+.checkcode {
+	overflow:hidden;
+}
+.checkcode  label{
+	line-height:36px;
+}
+#scanf {
+   display:inline-block;
+	width:200px;
+	height:36px;
+	background:#f5f5f5;
+	margin-top:15px;
+}
+.codenum {
+    display:inline-block;
+	width:100px;
+	height:36px;
+	background:#f5f5f5;
+	float:right;
+	margin-top:15px;
+}

@@ -24,7 +24,7 @@ header{
 }
 /*nav全部部分开始*/
 .homenav{
-	padding:40px 0;	
+	padding:20px 0;	
 	height:61px;
 	font-size: 14px;
 	font-weight:bolder;
@@ -232,10 +232,11 @@ footer{
 	line-height:22px;
 	padding-bottom:9px;
 }
+
 .sideInfo ul a{
 	font-size:14px;
 	color:#ecedde;
-	line-height:14px;
+	line-height:25px;
 	padding-top:19px;
 
 }
@@ -244,6 +245,7 @@ footer{
 	color:white;
 	border-bottom:2px solid #1a1a1a;
 	overflow: hidden;
+
 }
 .sideSecondInfo{
 	width:25%;
@@ -260,19 +262,18 @@ footer{
 	padding:40px 0;
 }
 .footerSecondSide p{
-	
-	font-size: 11px;
+	font-size: 14px;
 	color:white;
 	line-height:21px ;
-	/*float: left;*/
 }
 .footerThirdSide{
 	text-align: center;
 	padding: 50px 0;
 	overflow: hidden;
+	display: table;
+	margin: 0 auto;
 }
 .footerThirdSide ul{
-		padding: 0 355px ;
 		margin-top:47px;
 		overflow: hidden;
 }
@@ -283,9 +284,9 @@ footer{
 	
 }
 .footerThirdSide ul a{
-	font-size: 9px;
+	font-size: 13px;
 	color:white;
-	line-height: 9px;
+	line-height:13px;
 }
 .footerThirdSide p{
 	color:white;
@@ -294,9 +295,13 @@ footer{
 }
 .footerThirdSide p a{
 	color:#696107;
-	font-size: 12px;
+	font-size: 14px;
 }
-
+.footerThirdSide a:hover{
+	text-decoration: underline;
+	color:#abd397;
+	transition:all 0.3s ease 0s;
+}
 #scrolltopBtn{
 	width:56px;
 	height: 56px;
@@ -307,7 +312,7 @@ footer{
 	bottom:10px;
 	text-align: center;
 	line-height: 56px;
-	/*display: none;*/
+	display: none;
 }
 #scrolltopBtn:hover{
 	background:#ac0;
@@ -315,4 +320,8 @@ footer{
 #sliderBox{
 	width:600px;
 	height: 300px;
+}
+.footerFirstSide ul li:hover a{
+	color:#abd397;
+	transition:all 0.3s ease 0s;
 }

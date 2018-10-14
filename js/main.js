@@ -50,26 +50,27 @@ $(".foundconnect").hover(
 //点击回到顶部
 function gotop(){
        let $step=document.documentElement.scrollTop;
-        if($step>500){
+        if($step>1000){
             $("#scrolltopBtn").css({
                 "display":"block"
-            });
-        }
-     $("#scrolltopBtn").onclick=go;
-     function go(){
-        $step-=$step/100+1;
-     	document.documentElement.scrollTop=$step;
-     	let timer=setTimeout(go,3);
-     	if(document.documentElement.scrollTop==0){
-     		clearTimeout(timer);
-     	}
-     }
+            }); 
+            $("#scrolltopBtn").click=go;
+        } 
  }
+ function go(){
+      // console.log(123);
+        $step-=$step/100+1;
+      document.documentElement.scrollTop=$step;
+      let timer=setTimeout(go,3);
+      if(document.documentElement.scrollTop==0){
+        clearTimeout(timer);
+      }
+     }
 
 //固定菜单nav
 function headerfixed(){
     let $toplong=document.documentElement.scrollTop;
-    if($toplong>50){
+    if($toplong>0){
         $(".homenav").css({
             // "background":"white",
             "width":"100%",
@@ -80,11 +81,8 @@ function headerfixed(){
 
         });
     }
-
-
 }
 
-// nav下拉菜单
 $(".product-full").each(function(){
     $(this).hover(
         function(){ 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="css/ShoppingCart.css">
+	<link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
 </head>
@@ -76,101 +76,184 @@
 		</div>
 	</header>
 	<div class="section">
-	<div class="bigTitle">
-		<h1>Shopping Cart</h1>
-		<p>
-			<a href="javascript::()">Home</a>|
-			<a href="">Shopping Cart</a>
-		</p>
-	</div>
-	
-		<div class="shoppingProduct">
-			<table class="shoppingList">
-				<tr>
-					<th class="remove">remove</th>
-					<th>images</th>
-					<th>Product</th>
-					<th>Unit Price</th>
-					<th>Quantity</th>
-					<th>Totalh</th>
-				</tr>
-				<tr>
-					<td>
-						<a href="javascript:void(0)">
-							<i class="iconfont icon-shibai"></i>
-						</a>
-					</td>
-					<td>
-						<a href="javascript:void(0)">
-							<img src="imgs/cart/cart1.jpg" alt="">
-						</a>
-					</td>
-					<td>
-						<a href="javascript:void(0)">
-							Aliquam lobortis est
-						</a>
-					</td>
-					<td>
-						<span>$70.00</span>
-					</td>
-					<td>
-						<input type="number" value="1">
-					</td>
-					<td>
-						<span>$70.00</span>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="javascript:void(0)">
-							<i class="iconfont icon-shibai"></i>
-						</a>
-					</td>
-					<td>
-						<a href="javascript:void(0)">
-							<img src="imgs/cart/cart1.jpg" alt="">
-						</a>
-					</td>
-					<td>
-						<a href="javascript:void(0)">
-							Aliquam lobortis est
-						</a>
-					</td>
-					<td>
-						<span>$70.00</span>
-					</td>
-					<td>
-						<input type="number" value="1">
-					</td>
-					<td>
-						<span>$70.00</span>
-					</td>
-				</tr>
-			</table>
+		<div class="bigTitle">
+			<h1>Checkout</h1>
+			<p>
+				<a href="javascript::()">Home</a>|
+				<a href="">Checkout</a>
+			</p>
 		</div>
-		<div class="row1">
+		<div class="coupon">
+			<p>
+				<img src="imgs/icon/ss.jpg" alt="">
+				Returning customer? <span>Click here to login</span>	
+			</p>
+			<div class="login">
+					<div class="login-form">
+						<h5 class="loginRe">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum luctus.</h5>
+						<form action="##">
+							<div class="infoma">
+								<div>
+									<label >Username or email address <span>*</span> </label>
+							    </div>
+								<input type="text" name="username">
+							</div>
+							<div class="infoma">
+								<div>
+									<label >Password <span>*</span> </label>
+							    </div>
+								<input type="password" name="username">
+							</div>
+							<div class="Submit">
+								<button class="login-btn">login</button>
+								<input type="checkbox"><span>Remember me</span>
+							</div>
+							<div class="lostpass">
+								<a href="javascript:viod(0)">Lost your password?</a>
+							</div>
+						</form>
+					</div>
+			</div>
+			<p>
+				<img src="imgs/icon/ss.jpg" alt="">
+				Have a coupon?  <span>Click here to enter your code</span>	
+			</p>
 			<div class="row1Left">
 			  <div class="row1LeftText">
-			  	<input type="text" value="Coupon code">
+			  	 <input type="text" value="Coupon code">
 			  </div>
 			   <div class="rowSub">
-			  	<input type="submit" value="Apply coupon">
+			  	 <input type="submit" value="Apply coupon">
 			  </div>	
 			</div>
-			<div class="rowSub  rowSubright">
-			  <input type="submit" value="Apply coupon">
-			</div>		
 		</div>
-	    <div class="row2">
-	    	<div class="carttotal">
-	    		<h2>Cart Totals</h2>
-	    	    <ul class="productList">
-	    		   <li>Subtotal <span>$130.00</span></li>
-	    		    <li>Subtotal <span>$130.00</span></li>
-	    		</ul>
-	    		<a  href="javascript::void(0)">Proceed to checkout</a>
-	    	</div>
-	    </div>
+		<!-- connect -->
+		<div class="connect">
+			<div class="leftSide">
+                <div class="leftSideTop">
+					<h3 class="title">Billing Details</h3>
+					<div class="infoma ">
+					    <div>
+							<label >Country <span>*</span></label>
+						</div>
+						<select  class="Select" name="" id="">
+							<option value="">bangladesh</option>
+							<option value="">Algeria</option>
+							<option value="">Afghanistan</option>
+						</select>
+				    </div>
+				    <div>
+					    <div class="infoma leftinfoma  ">
+							<div>
+								<label >First Name <span>*</span> </label>
+							</div>
+							<input class="firstName"  type="text" >
+						</div>
+						<div class="infoma rightinfoma">
+							<div>
+								<label >Last Name <span>*</span> </label>
+							</div>
+							<input class="lastName" type="text" >
+						</div>
+				    </div>
+				    <div class="infoma infomat">
+						<div>
+							<label >Company Name<span>*</span> </label>
+						</div>
+					    <input type="text" class="companyN" >
+					    <input type="text" >
+					</div>
+					<div class="infoma infomat">
+						<div>
+							<label >Town/City<span>*</span> </label>
+						</div>
+					    <input type="text" >
+					</div>
+					<div>
+					    <div class="infoma leftinfoma  ">
+							<div>
+								<label >State/country <span>*</span> </label>
+							</div>
+							<input class="firstName"  type="text" >
+						</div>
+						<div class="infoma rightinfoma">
+							<div>
+								<label >Postcode/Zip <span>*</span> </label>
+							</div>
+							<input class="lastName" type="text" >
+						</div>
+				    </div>
+				    <div>
+					    <div class="infoma leftinfoma  ">
+							<div>
+								<label >Email Address<span>*</span> </label>
+							</div>
+							<input class="firstName"  type="text" >
+						</div>
+						<div class="infoma rightinfoma">
+							<div>
+								<label >Phone <span>*</span> </label>
+							</div>
+							<input class="lastName" type="text" >
+						</div>
+				    </div>
+				    <div id="addcou">
+				        <input  type="checkbox" />
+				        <span >Create an account?</span>
+				    </div>
+			    </div>
+			    <div class="leftSidebottom">
+					<h3 class="title">Ship to a different address?<input type="checkbox"></h3>
+					<div class="infoma">
+						<div>
+							<label >Order Notes <span>*</span> </label>
+						</div>
+						<textarea name="" id="" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+					</div>
+
+			    </div>
+		    </div>
+		    <div class="rightSide">
+		    	<h3>Your order</h3>
+		    	<div class="orderprod">
+		    		<table class="lastPro">
+		    			<tr>
+			    			<th>Product</th>
+			    			<th>Total</th>
+		    		    </tr>
+		    		    <tbody>
+			    		    <tr>
+			    		    	<td> Vestibulum suscipit <b>×1</b></td>
+			    		    	<td>£165.00</td>
+			    		    </tr>
+			    		    <tr>
+			    		    	<td> Vestibulum suscipit <b>×1</b></td>
+			    		    	<td>£165.00</td>
+			    		    </tr>
+		    		    </tbody>
+		    		    <tfoot>
+		    		    	<tr>
+			    		    	<td>Cart Subtotal</td>
+			    		    	<td><span class="amount">£215.00</span></td>
+			    		    </tr>
+		    		    	<tr class="lastTr">
+			    		    	<td>Order Total</td>
+			    		    	<td><span class="amount">£215.00</span></td>
+			    		    </tr>
+		    		    </tfoot>
+		    		</table>
+		    	</div>
+		    	<div class="bankpre">
+		    		<h3><a href="javascript:void(0)">Direct Bank Transfer.</a></h3>
+		    		<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+		    		<h4><a href="javascript:void(0)"> Cheque Payment</a></h4>
+		    		<h5><a href="javascript:void(0)"> Cheque Payment</a></h5>
+		    		<div class="totalSubmit">
+		    			<input type="submit" value="PLACE ORDER">
+		    		</div>
+		    	</div>
+		    </div>
+         </div>
     </div>
 
 	<!-- footer -->

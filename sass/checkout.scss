@@ -1,0 +1,328 @@
+@charset "utf-8";
+$color:#abd397;
+$borderColor:#d3d0d3;
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
+	margin:0;
+	padding:0;
+}
+/*body::-webkit-scrollbar{
+	display: none;
+}*/
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+body{
+	width:100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bigTitle{
+	text-align: center;
+	padding:73px 0;
+	background: #f4f4f4;
+	margin-bottom:120px;
+}
+.bigTitle h1{
+	font-size: 47px;
+	padding-bottom: 30px;
+}
+.bigTitle p a{
+	font-size: 14px;
+	padding: 0 20px;
+	color:#7c6666;
+}
+.bigTitle p a:hover{
+	color:$color;
+}
+.bigTitle p a:last-of-type{
+	font-size: 14px;
+	padding: 0 20px;
+	color:#abd397;
+}
+
+/*coupon开始*/
+.coupon{
+	width:1170px;
+	height:100px;
+	display:table;
+	margin:0 auto;
+}
+.coupon img{
+	verticle-align:middle;
+	padding-right:16px;
+}
+.coupon p{
+	color:#675e59;
+	font-size:14px;
+	line-height:14px;
+	border-top:3px solid #1a8bb5;
+	padding:28px 0px 28px 20px;;	
+	margin-bottom:28px;
+	background:#f6f6f6;
+}
+.coupon p span:hover{
+   color:$color;
+   transition:all 0.3s ease 0s;
+}
+.login{
+	margin-right:28px;
+}
+ .connect .reg{
+	margin-right:0px;
+}
+.login-form{
+	border:1px solid $borderColor;
+	border-radius:5px;
+	padding:10px 12px 34px;
+}
+ .loginRe{
+	color:#5f7392;
+	font-size:14px;
+	line-height:14px;
+	font-weight:200;
+	margin-bottom:16px;
+}
+.infoma label{
+	color:#5f7392;
+	font-size:14px;
+	line-height:14px;
+}
+.infoma label span{
+	color:#bb845a;
+}
+.infoma>input{
+	background:#f5f5f5;
+	width:530px;
+	height:36px;
+	border:none;
+	outline:none;
+	margin-top:15px;
+}
+.Submit{
+    margin-top:16px;
+	width:530px;
+	height:36px;
+	margin-bottom:19px;
+
+}
+.login-btn{
+	width:92px;
+	height:48px;
+	background:#000;
+	border:none;
+	outline:none;
+	color:white;
+	font-size:14px;
+	line-height:14px;
+	margin-right:28px;
+}
+.login-btn:hover{
+	background:$color;
+	transition:all 0.3s ease 0s;
+}
+.Submit span{
+	color:#5f7392;
+	font-size:14px;
+	line-height:14px;
+	
+}
+.lostpass a{
+	color:#bb845a;
+	font-size:14px;
+	line-height:14px;
+}
+.row1Left{
+	float: left;
+	margin-bottom:28px;
+}
+.row1 .rowSubright{
+   float: right;
+}
+.row1LeftText  {
+	float: left;
+	margin-right: 4px;
+}
+.rowSub{
+	float: left;
+}
+.row1LeftText input{
+	width:118px;
+	height:42px;
+	outline: none;
+	padding-left: 10px;
+}
+.rowSub input{
+	width:162px;
+	height:46px;
+	float: left;
+	outline: none;
+	border:none;
+	background: #333333;
+	color:white;
+	font-weight: 700;
+	transition: all 0.3s ease 0s;
+}
+.rowSub:hover input{
+   background:#abd373;
+   transition:all 0.3s ease 0s;
+
+ }
+
+ /*connect 部分开始*/
+ 
+ .connect{
+    background:pink;
+    width:1170px;
+    display:table;
+    overflow:hidden;
+     margin:0 auto;
+ }
+ /*leftSide 部分*/
+ .leftSide{
+    float:left;
+    width:574px;
+    padding-bottom:120px;
+
+ }
+ .leftSideTop{
+ padding-bottom:36px;
+ }
+.title{
+font-size:20px;
+color:#000315;
+padding-bottom:13px;
+line-height:22px;
+border-bottom:1px solid $borderColor;
+margin-bottom:26px;	
+}
+.Select{
+	width:574px;
+	height:34px;
+	outline:none;
+	border:none;
+	border:1px solid $borderColor;
+	margin-top:9px;
+}
+.leftSide .infoma{
+	margin-bottom:36px;
+}
+ .infoma .firstName {
+	width:270px;
+	border:1px solid $borderColor;
+}
+.leftinfoma{
+	float:left;
+	margin-right:30px;
+}
+.rightinfoma{
+	float:left;
+}
+ .infoma .lastName {
+	width:270px;
+	border:1px solid $borderColor;
+}
+.infomat input{
+	width:574px;
+	border:1px solid $borderColor;
+}
+.infomat .companyN{
+	margin-bottom:7px;
+
+}
+#addcou>input{
+    display: inline-block;
+    height: inherit;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+    width: inherit;
+}
+
+#addcou>span{
+	font-size:14px;
+	color:#898a85;
+	line-height:16px;
+}
+
+.leftSFidebottom input{
+	margin-left:24px;
+}
+.infoma textarea{
+	width:100%;
+	height:87px;
+	padding-left:15px;
+	padding-top:22px;
+	font-size:14px;
+}
+input placeholder{
+	color:red;
+}
+
+/*rightSide部分*/
+.rightSide{
+	width:491px;
+	height:599px;
+	background:#f2f2f2;
+	float:right;
+	padding:32px 40px 45px;
+}
+.rightSide>h3{
+	fnt-size:25px;
+	line-height:24px;
+	padding-bottom:12px;
+	border-bottom:1px solid $borderColor;
+}
+.orderprod{
+	margin-top:20px;
+	margin-bottom:25px;
+}
+.lastPro th {
+   width:451px;
+   background:#fffafa;
+   color:#4f4b64;	
+}
+.lastPro td{
+   width:451px;
+   text-align:center;
+   color:#4f4b64;
+}
+.lastPro tr{
+	height:55px;
+}
+tfoot tr{
+	height:70px;
+}
+.lastPro tr:hover{
+	background:#fffafa;
+}
+.bankpre{
+	margin-top:25px;
+}
+.bankpre a{
+	color:#555752;
+	font-size:14px;
+	line-height:24px;
+}
+.bankpre p{
+    margin:10px 0;
+	color:#555752;
+	font-size:14px;
+	line-height:22px;
+}
+.totalSubmit input{
+	display:inline-block;
+	background:#434343;
+	outline:none;
+	border:none;
+	padding:16px 193px;
+	font-size:14px;
+	line-height:16px;
+	color:white;
+	font-weight:700px;
+}
+.totalSubmit{
+	margin:25px 0 45px;
+}
