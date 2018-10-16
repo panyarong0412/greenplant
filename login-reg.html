@@ -6,76 +6,14 @@
 	<link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="shortcut icon" href="imgs/icon/author.png">
+
 
 </head>
 <body>
 	<!-- header -->
-	<header>
-		<div class="homenav">
-			<!-- <i class="iconfont icon-shouye"></i> -->
-			<img class="homelogo" src="imgs/logo/logo.png"/>
-			<div class="nav-list">
-				<div class="nav-other">
-					<div class="home-list">
-						<div >
-						   <img  class="foundconnect" src="imgs/icon/list.jpg" alt="">
-						</div>
-						    <ul>
-				   	   	    <li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    <li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    <li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    <li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    </ul>
-					</div>
-					<div class="home-search">
-							<img class="searchIcon" src="imgs/icon/search.jpg" alt="">
-							<!-- <input  class="search-box" type="text" placeholder="search produt"  > 
-							<img class="input-search" src="imgs/icon/search.jpg" alt=""/> -->
-					</div>
-					<div class="cart">
-						<div>
-							<img class="carticon" src="imgs/icon/cart.jpg" alt="">
-							<p>your cart<br/><span>$190</span></p>
-						</div>
-					</div>	
-				</div>
-			   <nav>
-			   	   <ul class="menu">
-				   	   	<li class="menuList">
-				   	   		<a href="javascript:void(0)"> Home</a>
-				   	   	    <ul>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    </ul>
-				   	   </li>
-				   	   	<li class="menuList"><a href="javascript:void(0)">Shop</a></li>
-				   	   	<li class="menuList"><a href="javascript:void(0)">Portfolio</a></li>
-				   	   	<li class="menuList"><a href="javascript:void(0)">Blog</a></li>
-				   	   	<li class="menuList">
-				   	   		<a href="javascript:void(0)">Pages</a>
-				   	   		<ul>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    </ul>
-				   	   	</li>
-				   	   	<li class="menuList">
-				   	   		<a href="javascript:void(0)">Features</a>
-				   	   		<ul class="FeaturesMenu">
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    	<li><a href="javascript:void(0)">home page one</a></li>
-				   	   	    </ul>
-				   	   	</li>
-			   	   </ul>
-			   </nav>
-			</div>
-		</div>
-	</header>
+	<div id="header"></div>
+	<!-- section -->
 	<div class="section">
 		<div class="bigTitle">
 			<h1>Login - Register</h1>
@@ -89,18 +27,22 @@
 				<div class="login">
 					<h2 >Login</h2>
 					<div class="login-form">
-						<form action="##">
+						<form action="login.php" method="post">
 							<div class="infoma">
 								<div>
 									<label >Username or email address <span>*</span> </label>
 							    </div>
-								<input type="text" name="username">
+								<input id="Lusername" type="text" name="username">
+								<p id="Lusernamep"></p>
 							</div>
+
 							<div class="infoma">
 								<div>
 									<label >Password <span>*</span> </label>
 							    </div>
-								<input type="password" name="username">
+								<input id="Lpassword"type="password" name="password">
+								<p id="Lpasswordp"></p>
+
 							</div>
 							<div class="Submit">
 								<button class="login-btn">login</button>
@@ -113,23 +55,25 @@
 				<div class="login">
 					<h2 >Register</h2>
 					<div class="login-form">
-						<form action="##">
+						<form action="regSave.php" method="post">
 							<div class="infoma">
 								<div>
 									<label >Username or email address <span>*</span> </label>
 							    </div>
-								<input type="text" name="username">
+								<input id="Rusername" type="text" name="username">
+								<p id="Rusernamep"></p>
 							</div>
 							<div class="infoma">
 								<div>
 									<label >Password <span>*</span> </label>
 							    </div>
-								<input type="password" name="username">
+								<input id="Rpassword" type="password" name="username">
+								<p id="Rpasswordp"></p>
 							</div>
 							<div class="infoma checkcode">
 								<label>请输入验证码： <span>*</span></label>
 								<input id="scanf" type="text">
-								<div class="codenum">adas</div>
+								<div class="codenum"></div>
 							</div>
 							<div class="Submit">
 								<button class="login-btn">Register</button>
@@ -139,195 +83,55 @@
 					</div>
 				</div>
 		    </div>
-		</div>
-		
+		</div>	
     </div>
 	<!-- footer -->
-	<div class="home-banner1">
-	    <a href="javascript::()">
-	    	<img src="imgs/brand/brand1.png" alt="">
-	    	<div class="bgDiv"></div>
-	    </a>
-	    <a href="javascript::()">
-	    	<img src="imgs/brand/brand2.png" alt="">
-	    	<div class="bgDiv"></div>
-	    </a>
-	    <a href="javascript::()">
-	    	<img src="imgs/brand/brand3.png" alt="">
-	    	<div class="bgDiv"></div>
-	    </a>
-	    <a href="javascript::()">
-	    	<img src="imgs/brand/brand4.png" alt="">
-	    	<div class="bgDiv"></div>
-	    </a>
-	    <a href="javascript::()">
-	    	<img src="imgs/brand/brand5.png" alt="">
-	    	<div class="bgDiv"></div>
-	    </a>
-	    <div class="slider-dotted">
-		   <ul>
-		     <li></li>
-		     <li></li>
-		     <li></li>
-		     <li></li>
-		   </ul>
-	    </div>
-	    </div>     	
-	 <!-- footer部分 -->
-	 <!-- footer 部分 -->
-    <div class="last">
-	    <footer>
-	    	<div class="footerFirstSide">
-	    		<div class="sideInfo">
-	    			<h3>My Account</h3>
-	    			<ul>
-	    				<li>
-	    					<a href="javascript::()">About Us</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Team Member</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Career</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Specials</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Best sellers</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Our stores</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Contact us</a>
-	    				</li>
-	    			</ul>
-	    		</div>
-	    		<div class="sideInfo">
-	    			<h3>My Account</h3>
-	    			<ul>
-	    				<li>
-	    					<a href="javascript::()">About Us</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Team Member</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Career</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Specials</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Best sellers</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Our stores</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Contact us</a>
-	    				</li>
-	    			</ul>
-	    		</div>
-	    		<div class="sideInfo">
-	    			<h3>My Account</h3>
-	    			<ul>
-	    				<li>
-	    					<a href="javascript::()">About Us</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Team Member</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Career</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Specials</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Best sellers</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Our stores</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Contact us</a>
-	    				</li>
-	    			</ul>
-	    		</div>
-	    		<div class="sideInfo">
-	    			<h3>My Account</h3>
-	    			<ul>
-	    				<li>
-	    					<a href="javascript::()">About Us</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Team Member</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Career</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Specials</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Best sellers</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Our stores</a>
-	    				</li>
-	    				<li>
-	    					<a href="javascript::()">Contact us</a>
-	    				</li>
-	    			</ul>
-	    		</div>
-	        </div>
-	        <div class="footerSecondSide">
-	        	<div class="sideSecondInfo">
-	        		<a href="">
-	        			<img src="imgs/logo/logo-footer.png" alt="">
-	        		</a>
-	        	</div>
-	        	<div class="sideSecondInfo clearInfo">
-	        		<a href="">
-	        			<img src="imgs/icon/hourse.jpg" alt="">
-	        		</a>
-	        		<p>Address : No 40 Baria Sreet 15/2 <br>NewYork City, NY, United States.</p>
-	        	</div>
-	        	<div class="sideSecondInfo clearInfo">
-	        		<a href="">
-	        			<img src="imgs/icon/message.jpg" alt="">
-	        		</a>
-	        		<p>Email:  <br>info@yourmail.com</p>
-	        	</div>
-	        	<div class="sideSecondInfo clearInfo">
-	        		<a href="">
-	        			<img src="imgs/icon/call.jpg" alt="">
-	        		</a>
-	        		<p>Phone:   <br>(+68) 123 456 7890</p>
-	        	</div>
-	        </div>
-	        <div class="footerThirdSide">
-	        	<div class="ThirdSideText">
-	        		<img src="imgs/payment/payment-icon.png" alt="">
-	        		<ul>
-	        			<li><a href="javascript::()">Site Map</a>|</li>
-	        			<li><a href="javascript::()">Search Terms</a>|</li>
-	        			<li><a href="javascript::()">Advanced Search</a>|</li>
-	        			<li><a href="javascript::()">Orders and Returns</a>|</li>
-	        			<li><a href="javascript::()">Contact Us</a>|</li>
-	        		</ul>
-	        		<p>Copyright © <a href="javascript::()">Plantmore</a> All Rights Reserved </p>
-	        	</div>
-	        	
-	        </div>
-	    </footer>
-    </div>
-    <div id="scrolltopBtn">
-    	<i class=" icon-shouqijiantouxiao"></i>
-    </div>
+	<div id="footer"></div>
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/login-reg.js"></script>
+<script>
+	window.onload=function(){
+		$("#header").load("header.html");
+       $("#footer").load("footer.html");
+		 let codenum= document.getElementsByClassName("codenum")[0];
+		 SuiJi();
+		codenum.style.color=getColor();
+		 codenum.onclick=function(){
+		 	SuiJi();
+		 	
+		 }
+         //随机数
+		function SuiJi(){
+        var str = ""; 
+        for(var i = 0 ; i < 6; i++){
+            var a = String.fromCharCode(random(48,57));
+            var b = String.fromCharCode(random(65,90));
+            var c = String.fromCharCode(random(97,122));
+            var d = String.fromCharCode(random(97,122));
+            str += a+b+c+d;
+        }
+        var kk = '';
+        for(var j=0; j<4; j++){
+            kk += str[random(0,str.length-1)];
+        }
+        codenum.innerHTML =  kk;
+    }
+
+	    function random(m,n){
+	            return Math.round(Math.random()*(n-m))+m;
+	    }
+	    //随机颜色
+        function getColor(){
+			var str="#";
+			for(var i=0;i<6;i++){
+				str+=(parseInt(Math.random()*16)).toString(16);
+			}
+			return str;
+        }
+
+    
+	}
+</script>

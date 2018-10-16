@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
 	margin:0;
@@ -15,163 +16,6 @@ ul,ol,li{
 body{
 	width:100%;
 	font-family: 'Poppins', sans-serif;
-}
-/*header*/
-header{
-	width:100%;
-	/*height:860px;*/
-	/*background: url(../imgs/slider/home1-slider1.jpg) no-repeat center center;*/
-}
-/*nav全部部分开始*/
-.homenav{
-	padding:20px 0;	
-	height:61px;
-	font-size: 14px;
-	font-weight:bolder;
-	color:#4a4a4a;
-	line-height:61px;
-	z-index:999;
-	/*opacity: 0.3;*/
-}
-.homelogo{
-	padding-left:153px;
-	float:left;
-}
-.nav-list{
-	float:right;
-}
-
-
-/*nav前半部分*/
-.nav-list  nav{
-	float:right;
-}
-.menuList{
-	float:left;
-	position: relative;
-	padding:0 33px;
-}
-.menuList>a{
-    font-size: 14px;
-	font-weight: bolder;
-	color:#4a4a4a;
-	padding:2px 0;
-}
-.menuList ul{
-	background:white;
-	width:200px;
-	padding:17px 0px 0px 20px;
-	box-shadow: 0 1px 3px 0px #ccc;
-	position: absolute;
-	left:0;
-	top:50px;
-	display: none;
-}
-.menuList ul li a{
-	font-size: 14px;
-	color:#6a6a6a;
-	font-weight: normal;
-}
- .menu.FeaturesMenu{
-    width:600px;
-    position: absolute;
-    left:-120px;
-    top:50px;
-}
-
-.menuList ul li:hover a{
-	color:#abd373;
-}
-/*nav后半部*/
-.nav-other{
-	float:right;
-	margin-left:40px;
-	line-height: 61px;
-	padding-right: 100px;
-}
-.nav-other img{
-	vertical-align: middle;
-}
-.cart{
-	float:right;
-	width:96px;
-	height:61px;
-	position: relative;
-	line-height: 61px;
-}
-.cart p{
-	font-size: 12px;
-	font-weight: bolder;
-	color:#4a4a4a;
-	line-height:12px;
-	padding-left: 36px;
-	padding-top: 18px;
-}
-.cart:hover p{
-	color:#abd373;
-	cursor: pointer;
-}
-.carticon{
-	position: absolute;
-	left:0;
-	top:15px;
-}
-.home-search{
-	display:inline-block;
-	float:right;
-	position: relative;
-}
-.search-box{
-	 position: relative;
-	 left:-29px;
-	 top:0px;
-	 float：left;
-	 /*display: none;*/
-}
-.search-box {
-    width:220px;
-    height: 40px;
-    outline:none;
-    border:none;
-    box-shadow: 0 0 1px 2px #d9d8d7;
-    text-indent: 12px;
-    padding-right: 24px;
-    font-size: 16px;
-    color:#757575;
-    display: none;
-   
-}
-.input-search{
-	position: absolute;
-	top: 23px;
-    left: 280px;
-	z-index: 9999;
-
-}
-.searchIcon{
-	padding:0 38px;
-}
-.home-list{
-	float:right;
-	position: relative;
-}
-.home-list ul{
-	float:left;
-	position: absolute;
-    background:white;
-	width:200px;
-	padding:17px 0px 0px 20px;
-	box-shadow: 0 1px 3px 0px #ccc;
-	position: absolute;
-	left:0;
-	top:50px;
-	display: none;
-	z-index: 999;
-	background:white;
-	width:200px;
-	padding:17px 0px 0px 20px;
-	box-shadow: 0 1px 3px 0px #ccc;
-	display: none;
 }
 .home-banner1{
 	display: table;
@@ -204,6 +48,7 @@ header{
 }
 
 /*footer*/
+
 .last{
 	width:100%;
 	background:black;
@@ -312,10 +157,11 @@ footer{
 	bottom:10px;
 	text-align: center;
 	line-height: 56px;
-	display: none;
+	/*display: none;*/
 }
 #scrolltopBtn:hover{
 	background:#ac0;
+	box-shadow: 0 0 5px 3px white;
 }
 #sliderBox{
 	width:600px;

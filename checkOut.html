@@ -86,7 +86,8 @@
 		<div class="coupon">
 			<p>
 				<img src="imgs/icon/ss.jpg" alt="">
-				Returning customer? <span>Click here to login</span>	
+				Returning customer? 
+				<span class="clickshow1">Click here to login</span>	
 			</p>
 			<div class="login">
 					<div class="login-form">
@@ -116,7 +117,7 @@
 			</div>
 			<p>
 				<img src="imgs/icon/ss.jpg" alt="">
-				Have a coupon?  <span>Click here to enter your code</span>	
+				Have a coupon?  <span class="clickshow2">Click here to enter your code</span>	
 			</p>
 			<div class="row1Left">
 			  <div class="row1LeftText">
@@ -136,11 +137,22 @@
 					    <div>
 							<label >Country <span>*</span></label>
 						</div>
-						<select  class="Select" name="" id="">
-							<option value="">bangladesh</option>
-							<option value="">Algeria</option>
-							<option value="">Afghanistan</option>
-						</select>
+					    <div>
+					    	<ul class="select">
+					    		<li>
+					    			<div class="select-head">
+					    				<span class="select-head-item"></span>
+					    				<span class="select-head-item2"><i class="iconfont icon-xialajiantouxiao"></i></span>
+					    			</div>
+					    			<ul class="option">
+					    				<li class="option-item">bangladesh</li>
+					    				<li class="option-item">Algeria</li>
+					    				<li class="option-item">Afghanistan</li>
+					    				<li class="option-item">Algeria</li>
+					    			</ul>
+					    		</li>
+					    	</ul>
+					    </div>
 				    </div>
 				    <div>
 					    <div class="infoma leftinfoma  ">
@@ -156,12 +168,19 @@
 							<input class="lastName" type="text" >
 						</div>
 				    </div>
-				    <div class="infoma infomat">
+				        <div class="infoma infomat">
 						<div>
-							<label >Company Name<span>*</span> </label>
+							<label >Company Name </label>
 						</div>
 					    <input type="text" class="companyN" >
-					    <input type="text" >
+					    
+					</div>
+				    <div class="infoma infomat">
+						<div>
+							<label >Address<span>*</span> </label>
+						</div>
+					    <input type="text" class="companyN" placeholder="Street address">
+					    <input type="text" placeholder="Apartment, suite, unit etc. (optional)">
 					</div>
 					<div class="infoma infomat">
 						<div>
@@ -203,14 +222,87 @@
 				    </div>
 			    </div>
 			    <div class="leftSidebottom">
-					<h3 class="title">Ship to a different address?<input type="checkbox"></h3>
-					<div class="infoma">
-						<div>
-							<label >Order Notes <span>*</span> </label>
-						</div>
-						<textarea name="" id="" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+			    	<div>
+					    <h3 class="title">Ship to a different address?<input id="addChecKed" type="checkbox"></h3> 
+						<div id="showship">
+						    <div class="infoma ">
+							    <div>
+									<label >Country <span>*</span></label>
+								</div>
+						        <div>
+							    	<ul class="select">
+							    		<li>
+							    			<div class="select-head">
+							    				<span class="select-head-item"></span>
+							    				<span class="select-head-item2"><i class="iconfont icon-xialajiantouxiao"></i></span>
+							    			</div>
+							    			<ul class="option">
+							    				<li class="option-item">bangladesh</li>
+							    				<li class="option-item">Algeria</li>
+							    				<li class="option-item">Afghanistan</li>
+							    				<li class="option-item">Algeria</li>
+							    			</ul>
+							    		</li>
+							    	</ul>
+						         </div>
+					        </div>
+							<div class="infoma infomat">
+								<div>
+									<label >First Name<span>*</span> </label>
+								</div>
+							    <input type="text" >
+							</div>
+							<div class="infoma infomat">
+								<div>
+									<label >last Name<span>*</span> </label>
+								</div>
+							    <input type="text" >
+						    </div>
+						   	<div class="infoma infomat">
+								<div>
+									<label >Town/City<span>*</span> </label>
+								</div>
+							    <input type="text" >
+							</div>
+							<div class="infoma infomat">
+						        <div>
+							        <label >Address<span>*</span> </label>
+						        </div>
+					            <input type="text" class="companyN" placeholder="Street address">
+					            <input type="text" placeholder="Apartment, suite, unit etc. (optional)">
+					        </div>
+							<div class="infoma infomat">
+								<div>
+									<label >State/Country<span>*</span> </label>
+								</div>
+							    <input type="text" >
+							</div>
+							<div class="infoma infomat">
+								<div>
+									<label >Postcode / Zip<span>*</span> </label>
+								</div>
+							    <input type="text" >
+						    </div>
+						    <div class="infoma infomat">
+								<div>
+									<label >Email Address<span>*</span> </label>
+								</div>
+							    <input type="text" >
+						    </div>
+						    <div class="infoma infomat">
+								<div>
+									<label >phone<span>*</span> </label>
+								</div>
+							    <input type="text" >
+						    </div>
+					    </div>
+			    </div>
+				<div class="infoma">
+					<div>
+						<label class="notes">Order Notes <span>*</span> </label>
 					</div>
-
+					<textarea name="" id="" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+					</div>
 			    </div>
 		    </div>
 		    <div class="rightSide">
@@ -253,9 +345,8 @@
 		    		</div>
 		    	</div>
 		    </div>
-         </div>
+        </div>
     </div>
-
 	<!-- footer -->
 	<div class="home-banner1">
 	    <a href="javascript::()">
@@ -444,4 +535,5 @@
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
-<script src="js/main.js"></script>
+<!-- <script src="js/main.js"></script> -->
+<script src="js/checkout.js"></script>

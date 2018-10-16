@@ -1,0 +1,284 @@
+@charset "utf-8";
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
+	margin:0;
+	padding:0;
+}
+/*body::-webkit-scrollbar{
+	display: none;
+}*/
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+body{
+	width:100%;
+	font-family: 'Poppins', sans-serif;
+}
+/*header*/
+header{
+	width:100%;
+	/*height:860px;*/
+	/*background: url(../imgs/slider/home1-slider1.jpg) no-repeat center center;*/
+}
+/*nav全部部分开始*/
+.homenav{
+	padding:20px 0;	
+	height:61px;
+	font-size: 14px;
+	font-weight:bolder;
+	color:#4a4a4a;
+	line-height:61px;
+	z-index:999;
+	/*background: red;*/
+	/*opacity: 0.3;*/
+}
+.homelogo{
+	padding-left:153px;
+	float:left;
+}
+.nav-list{
+	float:right;
+}
+
+
+/*nav前半部分*/
+.nav-list  nav{
+	float:right;
+}
+.menuList{
+	float:left;
+	position: relative;
+	padding:0 33px;
+}
+.menuList>a{
+    font-size: 14px;
+	font-weight: bolder;
+	color:#4a4a4a;
+	padding:2px 0;
+}
+.menuList ul{
+	background:white;
+	width:200px;
+	padding:17px 0px 0px 20px;
+	box-shadow: 0 1px 3px 0px #ccc;
+	position: absolute;
+	left:0;
+	top:50px;
+	display: none;
+}
+.menuList ul li a{
+	font-size: 14px;
+	color:#6a6a6a;
+	font-weight: normal;
+}
+ .menu.FeaturesMenu{
+    width:600px;
+    position: absolute;
+    left:-120px;
+    top:50px;
+}
+
+.menuList ul li:hover a{
+	color:#abd373;
+}
+/*nav后半部*/
+.nav-other{
+	float:right;
+	margin-left:40px;
+	line-height: 61px;
+	padding-right: 100px;
+}
+.nav-other img{
+	vertical-align: middle;
+	/*padding-bottom: 50px;*/
+
+}
+
+.cart{
+	float:right;
+	width:96px;
+	height:61px;
+	position: relative;
+}
+.cartconnect p{
+	font-size: 12px;
+	font-weight: bolder;
+	color:#4a4a4a;
+	line-height:12px;
+	padding-left: 36px;
+	padding-top: 18px;
+}
+.cartconnect:hover p{
+	color:#abd373;
+	cursor: pointer;
+}
+.home-list{
+	position:relative;
+}
+.showfound {
+	height:50px;
+	vertical-align: top;
+}
+.sde{
+	position:absolute;
+	top:10px;
+	left:-50px;
+}
+/*cartdetail开始*/
+.cartdetail{
+	background:white;
+	padding:13px 25px 40px 25px;
+	overflow: hidden;
+	width:400px;
+	position:absolute;
+	left: -298px;
+    top: 45px;
+    z-index: 999;
+    /*display:none;*/
+
+}
+.detailpro{
+	padding:23px 0;
+	float:left;
+	width:400px;
+	border-bottom: 1px solid #d3d0d3;
+}
+.detailpro .proimg{
+	display: inline-block;
+	float:left;
+	margin-right: 20px;
+	border:1px solid #d3d0d3;
+}
+.detailpro .ncp{
+	float:left;
+	line-height:30px;
+}
+.ncp a{
+	font-size:14px;
+	font-weight:700;
+	color:black;
+}
+.ncp p{
+	margin-top: 10px;
+	line-height:12px;
+	color:#959595;
+}
+.detailpro .cartprore{
+	float:right;
+	line-height: 12px;
+	color:block;
+}
+.proimg:hover{
+	border-color: #abd397;
+}
+.cartprore:hover{
+	color:#abd397;
+}
+.sum{
+	clear:both;
+    margin-bottom:30px;
+    padding:20px 0;
+	border-bottom: 1px solid #d3d0d3;
+	overflow: hidden; 
+
+}
+.sum span{
+	 font-size: 15px;
+	 color:#d3d0d3;
+	 line-height: 40px;
+	 color:#626262;
+}
+.sum span:first-of-type {
+	float:left;
+}
+.sum span:last-of-type{
+	float:right;
+}
+#cartBtn{
+	clear:both;
+}
+#cartBtn a{
+	display: inline-block;
+	padding:15px 20px;
+	font-size:14px;
+	background:white;
+	border-radius: 4px;
+	border:1px solid #d3d0d3;
+	color:#626262;
+	line-height:14px;
+}
+#cartBtn a:first-of-type{
+	float:left;
+}
+#cartBtn a:last-of-type{
+	float:right;
+}
+#cartBtn a:hover{
+	background:#abd397;
+	color:white;
+	transition:all 0.3s ease-in-out;
+}
+
+
+/*cartdetai结束*/
+.carticon{
+	position: absolute;
+	left:0;
+	top:15px;
+}
+.home-search{
+	display:inline-block;
+	float:right;
+	position: relative;
+}
+
+.search-box {
+    width:300px;
+    height: 40px;
+    outline:none;
+    border:none;
+    box-shadow: 0 0 1px 2px #d9d8d7;
+    text-indent: 12px;
+    padding-right: 24px;
+    font-size: 16px;
+    color:#757575;
+    position: absolute;
+	 left: -262px;
+     top: 57px;
+	 float：left;
+    /*display: none;*/
+   
+}
+.input-search{
+	position: absolute;
+	top: 69px;
+    left: 30px;
+	z-index: 9999;
+
+}
+.searchIcon{
+	padding:10px 38px;
+}
+.home-list{
+	float:right;
+	position: relative;
+}
+.home-list ul{
+	float:left;
+	position: absolute;
+    background:white;
+	width:200px;
+	padding:17px 0px 0px 20px;
+	box-shadow: 0 1px 3px 0px #ccc;
+	position: absolute;
+	left:0;
+	top:50px;
+	display: none;
+	z-index: 999;
+	background:white;
+	width:200px;
+	padding:17px 0px 0px 20px;
+	box-shadow: 0 1px 3px 0px #ccc;
+}

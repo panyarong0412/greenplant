@@ -424,7 +424,7 @@ header{
     padding:16px 0;
 }
 .product-first .pirse{
-		position: absolute;
+	position: absolute;
     left: 108px;
     bottom: 39px;
 }
@@ -541,6 +541,11 @@ header{
     line-height:49px;
     padding:16px 0;
 }
+.date-product-first .pirse{
+	position: absolute;
+    left: 155px;
+    bottom: 41px;
+}
 .date-product-first .pirse span{
     font-size:10px ;
     color:#868686;
@@ -642,35 +647,6 @@ header{
 	color:#b9da8a;
 	font-weight: bold;
 	
-}
-.home-banner1{
-	display: table;
-	height:153px;
-	margin: 0 auto 115px;
-	
-}
-.home-banner1 img{
-	display: block;
-	margin-bottom:30px;
-	
-}
-.home-banner1 a{
-	float:left;
-	position: relative;
-	
-}
-.home-banner1 .bgDiv{
-	width:241px;
-	height: 99px;
-	opacity:0.4;
-	background: white;
-	position: absolute;
-	top:0;
-	left:0;
-
-}
-.home-banner1 a:hover .bgDiv{
-	opacity:0;
 }
 
 /*theBlogs*/

@@ -74,18 +74,22 @@ body{
 	height: 130px;
 	border:1px solid  #ebebeb;
 }
-.shoppingList i a{
+.shoppingList tr td:nth-of-type(1) a i{
+	font-size:16px;
+	color:black;
+}
+.shoppingList tr td:nth-of-type(3)  a{
 	color:black;
 }
 .shoppingList span{
 	font-weight: 700;
 }
-.shoppingList i:hover{
+.shoppingList tr td:nth-of-type(1) a i:hover{
 	color:#abd373;
 	transition: all 0.3s ease 0s;
 
 }
-.shoppingList a:hover{
+.shoppingList tr td:nth-of-type(3)  a:hover{
 	color:#abd373;
 	transition: all 0.3s ease 0s;
 }

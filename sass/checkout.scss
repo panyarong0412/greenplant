@@ -68,7 +68,8 @@ body{
    transition:all 0.3s ease 0s;
 }
 .login{
-	margin-right:28px;
+	display:none;
+	margin-bottom:28px;
 }
  .connect .reg{
 	margin-right:0px;
@@ -77,6 +78,8 @@ body{
 	border:1px solid $borderColor;
 	border-radius:5px;
 	padding:10px 12px 34px;
+
+
 }
  .loginRe{
 	color:#5f7392;
@@ -137,6 +140,7 @@ body{
 .row1Left{
 	float: left;
 	margin-bottom:28px;
+	display:none;
 }
 .row1 .rowSubright{
    float: right;
@@ -190,21 +194,72 @@ body{
    padding-bottom:36px;
  }
 .title{
-    ont-size:20px;
+    font-size:20px;
 	color:#000315;
 	padding-bottom:13px;
 	line-height:22px;
 	border-bottom:1px solid $borderColor;
 	margin-bottom:26px;	
 }
-.Select{
+
+.select{
 	width:574px;
-	height:34px;
-	outline:none;
-	border:none;
-	border:1px solid $borderColor;
-	margin-top:9px;
+    height:34px;
+    border:1px solid $borderColor;
+    background:pink; 
+    position:relative;
+   
 }
+.select-head{
+	width:574px;
+    height:34px;
+    padding:0 40px 0 25px;
+    position:relative;
+
+}
+.select-head span{
+	line-height: 34px;
+	font-size:14px;
+	color:#5f7392;
+	float:left;
+	//display: inline-block;
+}
+.select-head-item{
+	float:left;
+}
+.select-head-item2{
+	position:absolute;
+	right:70px;
+	top:2px;
+	// display:none;
+}
+.option{
+	width:574px;
+    background:white;
+    position:absolute;
+    top:40px;
+    left:0px;
+    border:1px solid $borderColor;
+    border-radius: 5px;
+    display:none;
+}
+.option li{
+	line-height: 34px;
+	font-size:15px;
+	color:#5f7392;
+	padding-left:25px;
+
+}
+// .option li:first-child{
+// 	background:$color;
+// }
+.option li:hover{
+	background:$color;
+	color:white;
+	transition: all 0.3s ease 0s;
+}
+
+
 .leftSide .infoma{
 	margin-bottom:36px;
 }
@@ -245,17 +300,15 @@ body{
 	color:#898a85;
 	line-height:16px;
 }
-
-.leftSidebottom input{
-	margin-left:24px;
-}
 .infoma textarea{
 	width:100%;
 	height:87px;
 	padding-left:15px;
 	padding-top:22px;
 	font-size:14px;
+	margin-top:10px;
 }
+
 input placeholder{
 	color:red;
 }
@@ -269,7 +322,7 @@ input placeholder{
 	padding:32px 40px 45px;
 }
 .rightSide>h3{
-	fnt-size:25px;
+	font-size:25px;
 	line-height:24px;
 	padding-bottom:12px;
 	border-bottom:1px solid $borderColor;
@@ -332,4 +385,11 @@ tfoot tr{
 .bankpre a:hover{
 	color:$color;
 	transition:all 0.3s ease 0s;
+}
+
+#showship{
+	display:none;
+}
+input{
+	padding-left:20px;
 }
