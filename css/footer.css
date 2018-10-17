@@ -18,6 +18,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 .home-banner1{
+	clear:both;
 	display: table;
 	height:153px;
 	margin: 0 auto 115px;

@@ -6,7 +6,7 @@ $(function(){
   showminiCart();
   gotop();
   $('.cartdetail').hide();
-  // $('.search-box').hide();
+
 
   showsearch();
 
@@ -41,6 +41,7 @@ function showList(){
         });
 	   }
   );
+
 }
 //2.nav功能区
 function showfound(){
@@ -72,16 +73,25 @@ function showfound(){
 }
 //3.固定菜单nav
 function headerfixed(){
-    let $toplong=document.documentElement.scrollTop;
+    let $toplong=document.documentElement.scrollTop || document.body.scrollTop;
+    // console.log($toplong)
     if($toplong>0){
+      // $(".slidedown").css({
+      //       "position":"fixed",
+      //       "top":0,
+      //       "left":0
+      //   });
         $(".homenav").css({
             // "background":"white",
-            "width":"100%",
+            "width":1170,
+            "height":50,
+            "margin":"0 auto",
             "background-color":"rgba(255,255,255,0.8)",
             "position":"fixed",
             "top":0,
-            "left":0
+            "left":"12%"
         });
+        
     }
 }
 
@@ -96,9 +106,11 @@ function headerfixed(){
       }
     );
   }
+
   function showsearch(){
     $('.home-search').click(function(){
-      $('.search-box').slideToggle("slow");
+      console.log(123);
+      $('.searchbox').slideToggle("slow");
     }
     );
   }

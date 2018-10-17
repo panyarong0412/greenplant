@@ -1,0 +1,199 @@
+@charset "utf-8";
+$color:#abd373;
+$borderColor:#f1f1f1;
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea,li{
+	margin:0;
+	padding:0;
+}
+/*body::-webkit-scrollbar{
+	display: none;
+}*/
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+body{
+	width:100%;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width:1170px;
+	height:2000px;
+	margin:0 auto;
+	background:red;
+}
+.sideLeft{
+	width:272px;
+	height:700px;
+	float:left;
+	background:pink;
+	margin-right:28px;
+}
+.sideRight{
+	width:870px;
+	height:700px;
+	float:right;
+	background:#ccc;
+}
+.banner {
+	width:870px;
+	height:240px;
+	margin-bottom: 120px;
+}
+//banner下的导航
+.guideline{
+	width:870px;
+	height:36px;
+	background: red;
+	margin-bottom:10px;
+}
+.qiehuan{
+	// clear:both;
+	float:left;
+	background:pink;
+}
+.qiehuan ul li{
+	float:left;
+	width:36px;
+	height:36px;
+	border-radius: 50%;
+	text-align: center;
+	// display: inline-block;
+}
+.qiehuan ul li i{
+	font-size:16px;
+	font-weight:700 ;
+	line-height: 38px;
+	color:#222222;
+}
+.qiehuan li:nth-of-type(1){
+	background:$color;
+}
+.qiehuan li:nth-of-type(1) a i{
+	color:white;
+}
+
+.guideline3{
+	float:right;
+	margin-left:35px;
+}
+.guideline3 p{
+   line-height: 36px;
+   font-size: 14px;
+   color: #555;
+   // vertical-align: middle;
+}
+
+.guideline2{
+	float:right;
+}
+.guideline2 label{
+   line-height: 36px;
+   font-size: 14px;
+   color: #555;
+}
+
+//列表一
+
+.productside{
+	width:870px;
+	border-top:1px soild $borderColor;
+	border-bottom:1px soild $borderColor;
+
+	// background:orange;
+}
+.productside .product-first img{
+	width:271px;
+	height:285px;
+}
+.product-first{
+	width:271px;
+	// height:364px;
+	text-align: center;
+	padding-bottom: 17px;
+	position:relative;
+	background:white;
+	float:left;	
+}
+.product-first:hover{
+	box-shadow: 0px 0px 3px 1px $borderColor;
+	 transition: all .3s ease;
+}
+.product-first h2{
+    margin:12px 0;
+    font-size: 24px;
+    line-height: 30px;
+}
+.product-first h2:hover{
+	color:$color;
+	 transition: all .3s ease;
+}
+.hoverinfo{
+	position:relative;
+}
+.pirse{
+	 opacity:1;
+}
+.pirse span{
+	color: #555;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    transition: all .3s ease;
+   
+}
+.addcart{
+	position:absolute;
+	top:0;
+	left:79px;
+	z-index: 999;
+	opacity:0;
+}
+.product-first:hover .pirse{
+	opacity:0;
+	 transition: all .3s ease;
+	
+}
+.product-first:hover .addcart{
+	opacity:1;
+	 transition: all .3s ease;
+	
+}
+.addcart a{
+	color:black;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    padding: 0 5px;
+    text-transform: uppercase; 
+    transition: all .3s ease;
+}
+.addcart a:hover{
+	color:$color;
+}
+.productChioceIcon{
+	width:100px;
+	height:40px;
+	line-height: 40px;
+	background:white;
+    position: absolute;
+    top: 119px;
+    left: 77px;
+    z-index: 999;
+    opacity: 0;
+}
+.product-first:hover .productChioceIcon{
+	opacity:1;
+	 transition: all .3s ease;
+}
+.productChioceIcon i{
+	 padding: 0 6px;
+}
+.productChioceIcon i:hover {
+	color:$color;
+	 transition: all .3s ease;
+}

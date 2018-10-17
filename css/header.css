@@ -23,19 +23,22 @@ header{
 	/*background: url(../imgs/slider/home1-slider1.jpg) no-repeat center center;*/
 }
 /*nav全部部分开始*/
+.slidedown{
+	width:100%;
+	/*background: red;*/
+}
 .homenav{
-	padding:20px 0;	
+	padding:20px 0;
+	width:1170px;	
 	height:61px;
 	font-size: 14px;
 	font-weight:bolder;
 	color:#4a4a4a;
 	line-height:61px;
 	z-index:999;
-	/*background: red;*/
-	/*opacity: 0.3;*/
+	margin:0 auto;
 }
 .homelogo{
-	padding-left:153px;
 	float:left;
 }
 .nav-list{
@@ -50,7 +53,7 @@ header{
 .menuList{
 	float:left;
 	position: relative;
-	padding:0 33px;
+	padding:0 23px;
 }
 .menuList>a{
     font-size: 14px;
@@ -88,7 +91,7 @@ header{
 	float:right;
 	margin-left:40px;
 	line-height: 61px;
-	padding-right: 100px;
+	/*padding-right: 100px;*/
 }
 .nav-other img{
 	vertical-align: middle;
@@ -102,7 +105,7 @@ header{
 	height:61px;
 	position: relative;
 }
-.cartconnect p{
+.cartconnect .cartimg{
 	font-size: 12px;
 	font-weight: bolder;
 	color:#4a4a4a;
@@ -110,7 +113,7 @@ header{
 	padding-left: 36px;
 	padding-top: 18px;
 }
-.cartconnect:hover p{
+.cartconnect:hover .cartimg{
 	color:#abd373;
 	cursor: pointer;
 }
@@ -136,7 +139,7 @@ header{
 	left: -298px;
     top: 45px;
     z-index: 999;
-    /*display:none;*/
+    display:none;
 
 }
 .detailpro{
@@ -236,7 +239,7 @@ header{
 
 .search-box {
     width:300px;
-    height: 40px;
+    height: 30px;
     outline:none;
     border:none;
     box-shadow: 0 0 1px 2px #d9d8d7;
@@ -244,17 +247,21 @@ header{
     padding-right: 24px;
     font-size: 16px;
     color:#757575;
-    position: absolute;
-	 left: -262px;
-     top: 57px;
 	 float：left;
-    /*display: none;*/
    
 }
-.input-search{
+.searchbox{
 	position: absolute;
-	top: 69px;
-    left: 30px;
+	left: -266px;
+    top: 49px;
+     display:none;
+}
+.input-search{
+	width:12px;
+	height: 12px;
+	position: absolute;
+    top: 23px;
+    left: 288px;
 	z-index: 9999;
 
 }
@@ -273,8 +280,8 @@ header{
 	padding:17px 0px 0px 20px;
 	box-shadow: 0 1px 3px 0px #ccc;
 	position: absolute;
-	left:0;
-	top:50px;
+	left: -209px;
+    top: 50px;
 	display: none;
 	z-index: 999;
 	background:white;
